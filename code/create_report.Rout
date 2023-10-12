@@ -1,0 +1,62 @@
+
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # ------------------------------------------------------------------------------
+> # create_report.R
+> #
+> # Edit and run this script to compile Rmarkdown reports
+> #
+> # ------------------------------------------------------------------------------
+> 
+> library(rmarkdown)
+> 
+> rmd <- "BRS_ensemble_presentation.Rmd"
+> 
+> # Render pdf
+> render(
++   input = rmd,
++   beamer_presentation(
++     theme = 'AnnArbor', 
++     toc = T, 
++     colortheme = 'dolphin', 
++     fonttheme = 'structurebold'),
++   output_dir = "../report"
++ )
+
+
+processing file: BRS_ensemble_presentation.Rmd
+1/10               
+2/10 [setup]       
+3/10               
+4/10 [sl_pima_df]  
+5/10               
+6/10 [sl_pima_plot]
+7/10               
+8/10 [sl_pima_cm]  
+9/10               
+10/10 [sl_glmnet]   
+output file: BRS_ensemble_presentation.knit.md
+
+"C:/Users/kgillesp/Documents/rstudio-pandoc/pandoc" +RTS -K512m -RTS BRS_ensemble_presentation.knit.md --to beamer --from markdown+autolink_bare_uris+tex_math_single_backslash --output pandoc1475075987eab.tex --lua-filter "C:\Users\kgillesp\Documents\R\win-library\4.0\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\kgillesp\Documents\R\win-library\4.0\rmarkdown\rmarkdown\lua\latex-div.lua" --table-of-contents --variable theme=AnnArbor --variable colortheme=dolphin --variable fonttheme=structurebold --highlight-style tango --pdf-engine pdflatex --self-contained 
+
+Output created: H:/BSR/BSR_Ensemble/report/BRS_ensemble_presentation.pdf
+> 
+> proc.time()
+   user  system elapsed 
+  18.71    2.93   44.71 

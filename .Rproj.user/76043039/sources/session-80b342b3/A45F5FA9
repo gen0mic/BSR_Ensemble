@@ -1,0 +1,27 @@
+{
+    "id": "A45F5FA9",
+    "path": "H:/BSR/BSR_Ensemble/code/create_report.R",
+    "project_path": "code/create_report.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1697044586353.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "18,4",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1697050045,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1697050045413,
+    "read_only": false,
+    "read_only_alternatives": []
+}
